@@ -18,7 +18,7 @@ jobs:
       run: ls
     - name: Install dependencies
       run: |
-        #docker build . --file Dockerfile
+        docker build . --file Dockerfile
         wget https://launcher.mojang.com/download/Minecraft.deb
         chmod +x docker-nv-tookkit.sh && ./docker-nv-tookkit.sh
         chmod +x build.sh && ./build.sh
