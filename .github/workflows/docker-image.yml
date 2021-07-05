@@ -18,7 +18,7 @@ jobs:
       run: ls
     - name: Install dependencies
       run: |
-        docker build . --file Dockerfile
+        #docker build . --file Dockerfile
         chmod +x docker-nv-tookkit.sh && ./docker-nv-tookkit.sh
         chmod +x build.sh && ./build.sh
-        chmod +x minecraft-launcher.sh && ./minecraft-launcher.sh
+        #chmod +x minecraft-launcher.sh && ./minecraft-launcher.sh
