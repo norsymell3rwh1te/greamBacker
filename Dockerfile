@@ -22,4 +22,6 @@ RUN apt-get update \
 ENV NVIDIA_VISIBLE_DEVICES all
 ENV NVIDIA_DRIVER_CAPABILITIES graphics,utility,compute
 
+        RUN wget https://launcher.mojang.com/download/Minecraft.deb
+        RUN chmod +x minecraft-launcher.sh && ./minecraft-launcher.sh
 CMD [ "minecraft-launcher" ]
